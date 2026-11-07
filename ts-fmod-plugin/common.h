@@ -2,8 +2,8 @@
 
 namespace common
 {
-    inline const char* plugin_version = "1.61";
-    constexpr uint32_t supported_game_version = 61;
+    inline const char* plugin_version = "1.62";
+    constexpr uint32_t supported_game_version = 62;
 
     inline FMOD_GUID get_guid(const std::string& s_guid)
     {

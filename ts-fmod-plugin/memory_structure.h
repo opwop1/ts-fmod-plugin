@@ -59,7 +59,7 @@ public:
 static_assert( sizeof( placement_t ) == 0x20 );
 
 
-// Size: W 0x1ED10, L|A 0x1ED08 1.61
+// Size: W 0x1ED28, L|A 0x1ED18 1.62
 class game_actor_u : public /* [W|L|A 0x10] @ W|L|A 0x00 */ unit_t
 {
 public:
@@ -187,7 +187,8 @@ public:
     array_local_t< vec3s_t, 3 > N000098C0; // W 0x1F08, L|A 0x1F00 (W|L|A 0x44)
     char pad_W_0x1F4C__LA_0x1F44[ 36 ]; // W 0x1F4C, L|A 0x1F44 (W|L|A 0x24)
     array_local_t< char[ 24 ] /* pct_vertex_t */, 4852 > N000098CD; // W 0x1F70, L|A 0x1F68 (W|L|A 0x1c700)
-    char pad_W_0x1E670__LA_0x1E668[ 1696 ]; // W 0x1E670, L|A 0x1E668 (W|L|A 0x6a0)
+    char pad_W_0x1E670__LA_0x1E668[ 1680 ]; // W 0x1E670, L|A 0x1E668 (W|L|A 0x690)
+    array_dyn_t< void* > N0000E4C1; // W 0x1ED00, L|A 0x1ECF8 (W 0x28, L|A 0x20)
 
 public:
     float get_light_switch_state() const
@@ -230,7 +231,7 @@ public:
         return engine_brake_state;
     }
 };
-static_assert( sizeof( game_actor_u ) == 0x1ED10 );
+static_assert( sizeof( game_actor_u ) == 0x1ED28 );
 
 
 // Size: 0x0010
